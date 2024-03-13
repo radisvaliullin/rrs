@@ -10,7 +10,7 @@ fn main() {
 
     // parse config from args
     let config = Config::build(&args).unwrap_or_else(|err| {
-        println!("rsgrep: problem parsing arguments: {err}");
+        eprintln!("rsgrep: problem parsing arguments: {err}");
         process::exit(1);
     });
 
@@ -20,7 +20,7 @@ fn main() {
 
     // read file
     if let Err(e) = ch12_rsgrep::run(config) {
-        println!("rsgrep error: {e}");
+        eprintln!("rsgrep error: {e}");
         process::exit(1);
     }
 }
