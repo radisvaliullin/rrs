@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+
+members = [
+  "bks/rsbk/ch17_oop/ch17_3_oop_patern"
+]

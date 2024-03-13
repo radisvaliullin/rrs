@@ -1,4 +1,4 @@
-use ch17_3_oop_patern::{Post, PostV2};
+use bks_rsbk_ch17_3::{Post, PostV2};
 
 fn main() {
     let mut post = Post::new();
