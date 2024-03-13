@@ -3,5 +3,14 @@ resolver = "2"
 
 members = [
   "rsstart",
+  "bks/rsbk/ch1/ch1_3_hello_cargo",
+  "bks/rsbk/ch2/ch2_guessing_game",
+  "bks/rsbk/ch3_common/ch3_1_var_and_mutab",
+  "bks/rsbk/ch3_common/ch3_2_data_types",
+  "bks/rsbk/ch3_common/ch3_3_functions",
+  "bks/rsbk/ch3_common/ch3_5_control_flow",
+  "bks/rsbk/ch4_ownership/ch4_1_ownership",
+  "bks/rsbk/ch4_ownership/ch4_2_reference",
+  "bks/rsbk/ch4_ownership/ch4_3_slice",
   "bks/rsbk/ch17_oop/ch17_3_oop_patern", "bks/rsbk/ch19_advanced/ch19_2_traits", "bks/rsbk/ch19_advanced/ch19_4_fn_and_clousure", "bks/rsbk/ch19_advanced/ch19_5_macros/derive", "bks/rsbk/ch19_advanced/ch19_5_macros", "bks/rsbk/ch20_web_server/ch20_1to3_webserver",
 ]
