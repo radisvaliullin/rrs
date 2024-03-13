@@ -16,6 +16,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "bks_asyncbk_ch2_2to4"
+version = "0.1.0"
+dependencies = [
+ "futures",
+]
+
+[[package]]
 name = "bks_rsbk_ch10_1"
 version = "0.1.0"
 
