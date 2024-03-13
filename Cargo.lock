@@ -35,6 +35,46 @@ name = "bks_rsbk_ch13_3"
 version = "0.1.0"
 
 [[package]]
+name = "bks_rsbk_ch15_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch15_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch15_3"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch15_4"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch15_5"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch15_6"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch16_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch16_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch16_3"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch17_2"
+version = "0.1.0"
+
+[[package]]
 name = "bks_rsbk_ch17_3"
 version = "0.1.0"
 
@@ -66,7 +106,7 @@ name = "bks_rsbk_ch1_3"
 version = "0.1.0"
 
 [[package]]
-name = "bks_rsbk_ch20_webserver"
+name = "bks_rsbk_ch20_1to3"
 version = "0.1.0"
 
 [[package]]
@@ -145,46 +185,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "ch15_1_box_t"
-version = "0.1.0"
-
-[[package]]
-name = "ch15_2_deref_treat"
-version = "0.1.0"
-
-[[package]]
-name = "ch15_3_drop_treat"
-version = "0.1.0"
-
-[[package]]
-name = "ch15_4_ref_count_t"
-version = "0.1.0"
-
-[[package]]
-name = "ch15_5_ref_cell_t"
-version = "0.1.0"
-
-[[package]]
-name = "ch15_6_ref_cycles_leak"
-version = "0.1.0"
-
-[[package]]
-name = "ch16_1_threads"
-version = "0.1.0"
-
-[[package]]
-name = "ch16_2_message_passing"
-version = "0.1.0"
-
-[[package]]
-name = "ch16_3_shared_state"
-version = "0.1.0"
-
-[[package]]
-name = "ch17_2_trait_obj"
-version = "0.1.0"
 
 [[package]]
 name = "ferris-says"

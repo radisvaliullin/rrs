@@ -1,5 +1,5 @@
 [package]
-name = "ch15_6_ref_cycles_leak"
+name = "bks_rsbk_ch15_6"
 version = "0.1.0"
 edition = "2021"
 

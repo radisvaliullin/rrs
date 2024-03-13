@@ -1,5 +1,5 @@
-use ch17_2_trait_obj::Draw;
-use ch17_2_trait_obj::{Button, Screen};
+use bks_rsbk_ch17_2::Draw;
+use bks_rsbk_ch17_2::{Button, Screen};
 
 #[derive(Debug)]
 struct SelectBox {
