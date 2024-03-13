@@ -30,7 +30,58 @@ dependencies = [
 ]
 
 [[package]]
+name = "bks_rsbk_ch1_3"
+version = "0.1.0"
+
+[[package]]
 name = "bks_rsbk_ch20_webserver"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch2_gg"
+version = "0.1.0"
+dependencies = [
+ "rand",
+]
+
+[[package]]
+name = "bks_rsbk_ch3_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch3_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch3_3"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch3_5"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch4_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch4_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch4_3"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch5_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch5_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch5_3"
 version = "0.1.0"
 
 [[package]]
@@ -109,57 +160,6 @@ version = "0.1.0"
 
 [[package]]
 name = "ch17_2_trait_obj"
-version = "0.1.0"
-
-[[package]]
-name = "ch1_3_hello_cargo"
-version = "0.1.0"
-
-[[package]]
-name = "ch2_guessing_game"
-version = "0.1.0"
-dependencies = [
- "rand",
-]
-
-[[package]]
-name = "ch3_1_var_and_mutab"
-version = "0.1.0"
-
-[[package]]
-name = "ch3_2_data_types"
-version = "0.1.0"
-
-[[package]]
-name = "ch3_3_functions"
-version = "0.1.0"
-
-[[package]]
-name = "ch3_5_control_flow"
-version = "0.1.0"
-
-[[package]]
-name = "ch4_1_ownership"
-version = "0.1.0"
-
-[[package]]
-name = "ch4_2_reference"
-version = "0.1.0"
-
-[[package]]
-name = "ch4_3_slice"
-version = "0.1.0"
-
-[[package]]
-name = "ch5_1_struct_def"
-version = "0.1.0"
-
-[[package]]
-name = "ch5_2_using_structs"
-version = "0.1.0"
-
-[[package]]
-name = "ch5_3_struct_methods"
 version = "0.1.0"
 
 [[package]]
