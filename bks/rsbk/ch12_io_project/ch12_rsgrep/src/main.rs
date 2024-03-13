@@ -1,4 +1,5 @@
 use std::env;
+use std::fs;
 
 fn main() {
     println!("rust grep");
@@ -13,4 +14,8 @@ fn main() {
     // print for debug
     println!("Searching for {}", query);
     println!("In file {}", file_path);
+
+    // read file
+    let contents = fs::read_to_string(file_path).expect("should have been able to read the file");
+    println!("fice cont: {}", contents);
 }
