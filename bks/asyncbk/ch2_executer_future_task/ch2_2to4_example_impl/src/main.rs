@@ -90,6 +90,7 @@ impl Executor {
 // Async code or Future run/compute as task (wraps Future) on executor
 // Future implement poll() to advance itself as long as posible (called by executor)
 // poll accept wake() (wrapped to context). Calling wake Future notify Executor about readiness (polled).
+// One thing not clear for me how future.poll know which of nested future's poll need call.
 fn main() {
     let (executor, spawner) = new_executor_and_spawner();
     // Spawn a task.
