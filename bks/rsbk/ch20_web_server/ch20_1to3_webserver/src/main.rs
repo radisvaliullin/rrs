@@ -18,22 +18,22 @@ fn main() {
 }
 
 fn handle_connection(mut stream: TcpStream) {
+    // request read
     let buf_reader = BufReader::new(&mut stream);
-    let _http_request: Vec<_> = buf_reader
-        .lines()
-        .map(|result| result.unwrap())
-        .take_while(|line| !line.is_empty())
-        .collect();
-    // for debug while developing
-    // println!("http resp: {:#?}", _http_request);
+    let request_line = buf_reader.lines().next().unwrap().unwrap();
 
     // response
-    let status_line = "HTTP/1.1 200 OK";
-    let contents = fs::read_to_string("bks/rsbk/ch20_web_server/ch20_1to3_webserver/web_content/hello.html").unwrap();
+    let (status_line, html_template_path) = if request_line == "GET / HTTP/1.1" {
+        ("HTTP/1.1 200 OK", "bks/rsbk/ch20_web_server/ch20_1to3_webserver/web_content/hello.html")
+    } else {
+        ("HTTP/1.1 404 NOT FOUND", "bks/rsbk/ch20_web_server/ch20_1to3_webserver/web_content/404.html")
+    };
+    let contents = fs::read_to_string(html_template_path).unwrap();
     let length = contents.len();
 
+    // write response
     let response =
         format!("{status_line}\r\nContent-Length: {length}\r\n\r\n{contents}");
-
     stream.write_all(response.as_bytes()).unwrap();
+
 }
