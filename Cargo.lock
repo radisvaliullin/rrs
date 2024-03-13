@@ -3,6 +3,38 @@
 version = 3
 
 [[package]]
+name = "bks_rsbk_ch10_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch10_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch10_3"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch11_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch12_rg"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch13_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch13_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch13_3"
+version = "0.1.0"
+
+[[package]]
 name = "bks_rsbk_ch17_3"
 version = "0.1.0"
 
@@ -85,42 +117,34 @@ name = "bks_rsbk_ch5_3"
 version = "0.1.0"
 
 [[package]]
+name = "bks_rsbk_ch6_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch6_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch8_1"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch8_2"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch8_3"
+version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch9_2"
+version = "0.1.0"
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "ch10_1_generic_data_types"
-version = "0.1.0"
-
-[[package]]
-name = "ch10_2_traits"
-version = "0.1.0"
-
-[[package]]
-name = "ch10_3_lifetime"
-version = "0.1.0"
-
-[[package]]
-name = "ch11_1_write_tests"
-version = "0.1.0"
-
-[[package]]
-name = "ch12_rsgrep"
-version = "0.1.0"
-
-[[package]]
-name = "ch13_1_clousure_anonym_func"
-version = "0.1.0"
-
-[[package]]
-name = "ch13_2_interators"
-version = "0.1.0"
-
-[[package]]
-name = "ch13_3_improved_rsgrep"
-version = "0.1.0"
 
 [[package]]
 name = "ch15_1_box_t"
@@ -160,30 +184,6 @@ version = "0.1.0"
 
 [[package]]
 name = "ch17_2_trait_obj"
-version = "0.1.0"
-
-[[package]]
-name = "ch6_1_enum"
-version = "0.1.0"
-
-[[package]]
-name = "ch6_2_match"
-version = "0.1.0"
-
-[[package]]
-name = "ch8_1_vectors"
-version = "0.1.0"
-
-[[package]]
-name = "ch8_2_strings"
-version = "0.1.0"
-
-[[package]]
-name = "ch8_3_hashmap"
-version = "0.1.0"
-
-[[package]]
-name = "ch9_2_recoverable_errors"
 version = "0.1.0"
 
 [[package]]

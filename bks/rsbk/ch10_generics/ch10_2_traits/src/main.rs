@@ -1,4 +1,4 @@
-use ch10_2_traits::{Comment, Pair, Some, Summary, Tweet};
+use bks_rsbk_ch10_2::{Comment, Pair, Some, Summary, Tweet};
 
 fn main() {
     println!("treats");

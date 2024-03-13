@@ -1,4 +1,4 @@
-use ch13_3_improved_rsgrep::Config;
+use bks_rsbk_ch13_3::Config;
 use std::env;
 use std::process;
 
@@ -16,7 +16,7 @@ fn main() {
     // println!("In file {}", config.file_path);
 
     // read file
-    if let Err(e) = ch13_3_improved_rsgrep::run(config) {
+    if let Err(e) = bks_rsbk_ch13_3::run(config) {
         eprintln!("rsgrep error: {e}");
         process::exit(1);
     }
