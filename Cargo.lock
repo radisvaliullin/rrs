@@ -5,3 +5,7 @@ version = 3
 [[package]]
 name = "bks_rsbk_ch17_3"
 version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch19_2"
+version = "0.1.0"
