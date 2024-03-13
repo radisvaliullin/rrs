@@ -2,5 +2,5 @@
 resolver = "2"
 
 members = [
-  "bks/rsbk/ch17_oop/ch17_3_oop_patern", "bks/rsbk/ch19_advanced/ch19_2_traits", "bks/rsbk/ch19_advanced/ch19_4_fn_and_clousure", "bks/rsbk/ch19_advanced/ch19_5_macros/derive", "bks/rsbk/ch19_advanced/ch19_5_macros",
+  "bks/rsbk/ch17_oop/ch17_3_oop_patern", "bks/rsbk/ch19_advanced/ch19_2_traits", "bks/rsbk/ch19_advanced/ch19_4_fn_and_clousure", "bks/rsbk/ch19_advanced/ch19_5_macros/derive", "bks/rsbk/ch19_advanced/ch19_5_macros", "bks/rsbk/ch20_web_server/ch20_1to3_webserver",
 ]

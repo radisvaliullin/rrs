@@ -30,6 +30,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "bks_rsbk_ch20_webserver"
+version = "0.1.0"
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.78"
 source = "registry+https://github.com/rust-lang/crates.io-index"
