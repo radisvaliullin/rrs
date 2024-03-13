@@ -1,17 +1,18 @@
+use bks_rsbk_ch20_webserver::ThreadPool;
 use std::{
     fs,
-    io::{prelude::*, BufReader},
+    io::prelude::*,
     net::{TcpListener, TcpStream},
     thread,
     time::Duration,
 };
-use bks_rsbk_ch20_webserver::ThreadPool;
 
 fn main() {
     println!("server: main");
 
     // listen
-    let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
+    let addr = "127.0.0.1:8080";
+    let listener = TcpListener::bind(addr).unwrap();
     let pool = ThreadPool::new(4);
 
     for stream in listener.incoming() {
@@ -21,30 +22,39 @@ fn main() {
             handle_connection(stream);
         });
     }
+    println!("server: shutting down");
 }
 
 fn handle_connection(mut stream: TcpStream) {
     // request read
-    let buf_reader = BufReader::new(&mut stream);
-    let request_line = buf_reader.lines().next().unwrap().unwrap();
+    let mut buffer = [0; 1024];
+    stream.read(&mut buffer).unwrap();
 
-    // response
+    let req_get_root = b"GET / HTTP/1.1\r\n";
+    let req_get_sleep = b"GET /sleep HTTP/1.1\r\n";
+
+    // response build
     let html_template_hello = "bks/rsbk/ch20_web_server/ch20_1to3_webserver/web_content/hello.html";
     let html_template_404 = "bks/rsbk/ch20_web_server/ch20_1to3_webserver/web_content/404.html";
-    let (status_line, html_template_path) = match &request_line[..] {
-        "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", html_template_hello),
-        "GET /sleep HTTP/1.1" => {
-            thread::sleep(Duration::from_secs(5));
-            ("HTTP/1.1 200 OK", html_template_hello)
-        }
-        _ => ("HTTP/1.1 404 NOT FOUND", html_template_404),
+    let (status_line, html_template_path) = if buffer.starts_with(req_get_root) {
+        ("HTTP/1.1 200 OK", html_template_hello)
+    } else if buffer.starts_with(req_get_sleep) {
+        // emulate long request
+        thread::sleep(Duration::from_secs(5));
+        ("HTTP/1.1 200 OK", html_template_hello)
+    } else {
+        ("HTTP/1.1 404 NOT FOUND", html_template_404)
     };
+
     let contents = fs::read_to_string(html_template_path).unwrap();
-    let length = contents.len();
+    let response = format!(
+        "{}\r\nContent-Length: {}\r\n\r\n{}",
+        status_line,
+        contents.len(),
+        contents
+    );
 
     // write response
-    let response =
-        format!("{status_line}\r\nContent-Length: {length}\r\n\r\n{contents}");
     stream.write_all(response.as_bytes()).unwrap();
-
+    stream.flush().unwrap();
 }
