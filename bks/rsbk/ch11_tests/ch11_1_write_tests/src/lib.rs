@@ -1,12 +1,12 @@
 #[derive(Debug)]
 struct Rectangle {
-    width: u32,
-    height: u32,
+    _width: u32,
+    _height: u32,
 }
 
 impl Rectangle {
-    fn can_hold(&self, other: &Rectangle) -> bool {
-        self.width > other.width && self.height > other.height
+    fn _can_hold(&self, other: &Rectangle) -> bool {
+        self._width > other._width && self._height > other._height
     }
 }
 
@@ -19,7 +19,7 @@ pub fn add_two(a: i32) -> i32 {
 }
 
 pub struct Guess {
-    value: i32,
+    _value: i32,
 }
 
 impl Guess {
@@ -28,7 +28,7 @@ impl Guess {
             panic!("Guess value must be between 1 and 100, got {}.", value);
         }
 
-        Guess { value }
+        Guess { _value: value }
     }
 }
 
@@ -50,29 +50,29 @@ mod tests {
     #[test]
     fn larger_can_hold_smaller() {
         let larger = Rectangle {
-            width: 8,
-            height: 7,
+            _width: 8,
+            _height: 7,
         };
         let smaller = Rectangle {
-            width: 5,
-            height: 1,
+            _width: 5,
+            _height: 1,
         };
 
-        assert!(larger.can_hold(&smaller));
+        assert!(larger._can_hold(&smaller));
     }
 
     #[test]
     fn smaller_cannot_hold_larger() {
         let larger = Rectangle {
-            width: 8,
-            height: 7,
+            _width: 8,
+            _height: 7,
         };
         let smaller = Rectangle {
-            width: 5,
-            height: 1,
+            _width: 5,
+            _height: 1,
         };
 
-        assert!(!smaller.can_hold(&larger));
+        assert!(!smaller._can_hold(&larger));
     }
 
     #[test]
