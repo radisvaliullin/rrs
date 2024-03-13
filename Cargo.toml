@@ -44,5 +44,5 @@ members = [
   "bks/rsbk/ch19_advanced/ch19_4_fn_and_clousure",
   "bks/rsbk/ch19_advanced/ch19_5_macros/derive",
   "bks/rsbk/ch19_advanced/ch19_5_macros",
-  "bks/rsbk/ch20_web_server/ch20_1to3_webserver",
+  "bks/rsbk/ch20_web_server/ch20_1to3_webserver", "bks/asyncbk/ch1_getstarted/ch1_3_async_await",
 ]
