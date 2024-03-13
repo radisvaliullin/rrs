@@ -45,5 +45,5 @@ members = [
   "bks/rsbk/ch19_advanced/ch19_5_macros/derive",
   "bks/rsbk/ch19_advanced/ch19_5_macros",
   "bks/rsbk/ch20_web_server/ch20_1to3_webserver",
-  "bks/asyncbk/ch1_getstarted/ch1_3_async_await", "bks/asyncbk/ch2_executer_future_task/ch2_2to4_example_impl"
+  "bks/asyncbk/ch1_getstarted/ch1_3_async_await", "bks/asyncbk/ch2_executer_future_task/ch2_2to4_example_impl", "bks/asyncbk/ch9_http_server/ch9_1to3_http_server",
 ]
