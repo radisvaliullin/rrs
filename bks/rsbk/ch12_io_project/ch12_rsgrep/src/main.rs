@@ -1,6 +1,6 @@
+use ch12_rsgrep::Config;
 use std::env;
 use std::process;
-use ch12_rsgrep::Config;
 
 fn main() {
     // println!("rust grep");
@@ -15,8 +15,8 @@ fn main() {
     });
 
     // print for debug
-    println!("Searching for {}", config.query);
-    println!("In file {}", config.file_path);
+    // println!("Searching for {}", config.query);
+    // println!("In file {}", config.file_path);
 
     // read file
     if let Err(e) = ch12_rsgrep::run(config) {
