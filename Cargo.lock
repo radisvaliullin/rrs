@@ -72,6 +72,46 @@ name = "ch13_3_improved_rsgrep"
 version = "0.1.0"
 
 [[package]]
+name = "ch15_1_box_t"
+version = "0.1.0"
+
+[[package]]
+name = "ch15_2_deref_treat"
+version = "0.1.0"
+
+[[package]]
+name = "ch15_3_drop_treat"
+version = "0.1.0"
+
+[[package]]
+name = "ch15_4_ref_count_t"
+version = "0.1.0"
+
+[[package]]
+name = "ch15_5_ref_cell_t"
+version = "0.1.0"
+
+[[package]]
+name = "ch15_6_ref_cycles_leak"
+version = "0.1.0"
+
+[[package]]
+name = "ch16_1_threads"
+version = "0.1.0"
+
+[[package]]
+name = "ch16_2_message_passing"
+version = "0.1.0"
+
+[[package]]
+name = "ch16_3_shared_state"
+version = "0.1.0"
+
+[[package]]
+name = "ch17_2_trait_obj"
+version = "0.1.0"
+
+[[package]]
 name = "ch1_3_hello_cargo"
 version = "0.1.0"
 
