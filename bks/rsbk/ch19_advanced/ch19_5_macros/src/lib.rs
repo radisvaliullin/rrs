@@ -10,3 +10,7 @@ macro_rules! myvec {
         }
     };
 }
+
+pub trait HelloMacro {
+    fn hello_macro();
+}
