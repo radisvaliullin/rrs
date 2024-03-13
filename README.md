@@ -1,2 +1,2 @@
 # ttrs
-Test Rust Lang
+Research of Rust Lang
