@@ -9,3 +9,7 @@ version = "0.1.0"
 [[package]]
 name = "bks_rsbk_ch19_2"
 version = "0.1.0"
+
+[[package]]
+name = "bks_rsbk_ch19_4"
+version = "0.1.0"

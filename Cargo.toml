@@ -3,5 +3,5 @@ resolver = "2"
 
 members = [
   "bks/rsbk/ch17_oop/ch17_3_oop_patern",
-  "bks/rsbk/ch19_advanced/ch19_2_traits",
+  "bks/rsbk/ch19_advanced/ch19_2_traits", "bks/rsbk/ch19_advanced/ch19_4_fn_and_clousure",
 ]
