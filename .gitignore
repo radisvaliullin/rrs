@@ -1,2 +1,5 @@
 # rust target
 **/target/
+
+# temp folder
+/tmp/
