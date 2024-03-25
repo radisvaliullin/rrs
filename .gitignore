@@ -3,3 +3,6 @@
 
 # temp folder
 /tmp/
+
+# ignore
+/play/src/lib.rs
