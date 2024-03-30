@@ -4,6 +4,19 @@ struct One {
     _two: String,
 }
 
+#[derive(Debug)]
+struct OneOne<'a> {
+    _one: u32,
+    _oneone: &'a mut Box<One>,
+}
+
+// impl<'a> Clone for OneOne<'a> {
+//     fn clone(&self) -> OneOne<'a> {
+//         println!("asdf");
+//         return OneOne{_one: self._one, _oneone: self._oneone};
+//     }
+// }
+
 pub fn main() {
     println!("mainmain");
 
@@ -27,5 +40,13 @@ pub fn main() {
     let o2 = o;
     // comment because o moved to o2
     // println!("o is {:?}", o);
-    println!("b is {:?}", o2);
+    println!("o is {:?}", o2);
+
+    // clone struct with mutable field
+    let mut o2box = Box::new(o2);
+    let oo = OneOne{_one: 1, _oneone: &mut o2box};
+    println!("oo is {:?}", oo);
+    // commented, can clone object with mutable reference fields (right now can find solution)
+    // let mut oo2 = oo.clone();
+    // println!("oo2 is {:?}", oo2);
 }
