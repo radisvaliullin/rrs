@@ -51,4 +51,12 @@ pub fn main() {
     // println!("oo2 is {:?}", oo2);
     let oorm = &mut oo;
     println!("oorm is {:?}", oorm);
+
+    // 
+    let mut o = One{_one: 1, _two: String::from("qwerty")};
+    o._one = 3;
+    let orm = &mut &o;
+    // commented, can not assign via & (immutable)
+    // orm._one = 5;
+    println!("orm is {:?}", orm);
 }
