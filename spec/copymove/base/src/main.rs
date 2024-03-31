@@ -44,9 +44,11 @@ pub fn main() {
 
     // clone struct with mutable field
     let mut o2box = Box::new(o2);
-    let oo = OneOne{_one: 1, _oneone: &mut o2box};
+    let mut oo = OneOne{_one: 1, _oneone: &mut o2box};
     println!("oo is {:?}", oo);
     // commented, can clone object with mutable reference fields (right now can find solution)
     // let mut oo2 = oo.clone();
     // println!("oo2 is {:?}", oo2);
+    let oorm = &mut oo;
+    println!("oorm is {:?}", oorm);
 }
